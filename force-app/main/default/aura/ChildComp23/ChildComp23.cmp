@@ -1,0 +1,12 @@
+<aura:component >
+	    <aura:attribute name="childAccName" type="string" />
+    <aura:attribute name="childAccPhone" type="string" />
+    <aura:attribute name="childAccRating" type="string"/>
+    <div>
+        <h1>Child Component Data:</h1>
+        Account Name : "{!v.childAccName}" <br/>
+        Account Phone : "{!v.childAccPhone}"  <br/>
+    	Rating : "{!v.childAccRating}"  <br/>
+    
+    </div>
+</aura:component>

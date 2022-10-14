@@ -1,0 +1,13 @@
+<template>
+    <div >
+     
+        <lightning-input type="number" label="First Number" onchange={firstNumberChange} value={firstNumber} placeholder="Enter Number Only"></lightning-input>
+        <lightning-input type="number" label="Second Number" onchange={secondNumberChange} value={secondNumber} placeholder="Enter Number Only"></lightning-input>
+        <lightning-button variant="brand-outline" label=""  icon-name="utility:add" title="add" onclick={add} ></lightning-button>
+        <lightning-button variant="brand-outline" label=""  icon-name="utility:dash" title="sub" onclick={sub} ></lightning-button>
+        <lightning-button variant="brand-outline" label="" icon-name="utility:close" title="mul" onclick={mul} ></lightning-button>
+        <lightning-button variant="brand-outline" label="" icon-name="utility:italic" title="div" onclick={div} ></lightning-button>
+        
+    </div>
+    <div> Result : {result} </div>
+</template>

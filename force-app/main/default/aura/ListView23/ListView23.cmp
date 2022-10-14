@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="objName" type="String" />
+    <aura:attribute name="lvName" type="String" />
+    <aura:attribute name="rows" type="String" />
+    <lightning:listView aura:id="listview"
+                        objectApiName="{!v.objName}"
+                        listName="{!v.lvName}"
+                        rows="5"
+                        showSearchBar="true"
+                        showActionBar="true"
+                        enableInlineEdit="true"
+                        showRowLevelActions="true"
+                        />
+    
+</aura:component>

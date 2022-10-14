@@ -1,0 +1,18 @@
+<apex:page Controller="youtubevfPage">
+
+    <apex:form id="theform">
+      <apex:pageBlock title="Enter Text here">
+          <apex:inputText value="{!lsttxt}"  />
+           <apex:commandButton action="{!Search}" value="search" reRender="theform" id="bor"/>  
+          
+          
+          
+    <apex:pageblocktable id="bookrec" rendered="{!Showlist}" value="{!lsttxt}" var="fetch">
+
+    <apex:column >  <apex:facet name="header">Name</apex:facet>
+                          {!lsttxt}
+                    </apex:column>  
+          </apex:pageblocktable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

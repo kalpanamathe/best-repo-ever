@@ -1,0 +1,35 @@
+<apex:page controller="ContactPagenation" >
+     <apex:form >
+        <apex:sectionHeader title="!$label.contactEdit" subtitle="New Contact Edit" />
+    <apex:pageBlock title="Contact Edit" helpTitle="Help" helpurl="https://www.google.com" tabStyle="Contact"> 
+            <apex:pageBlockSection title="Contact Information" columns="2">
+                <apex:InputField value="{!con.Name}"/> 
+                <apex:InputField value="{!con.Phone}"/> 
+                <apex:InputField value="{!con.Salutation}"/> 
+                <apex:InputField value="{!con.FirstName}"/> 
+                <apex:InputField value="{!con.LastName}"/> 
+                <apex:InputField value="{!con.AccountId}"/> 
+                <apex:InputField value="{!con.MobilePhone}"/> 
+                <apex:InputField value="{!con.Title}"/> 
+                <apex:InputField value="{!con.OtherPhone}"/> 
+                <apex:InputField value="{!con.Department}"/> 
+                <apex:InputField value="{!con.Fax}"/> 
+                <apex:InputField value="{!con.Birthdate}"/> 
+                <apex:InputField value="{!con.Email}"/> 
+                <apex:InputField value="{!con.ReportsToId}"/> 
+                <apex:InputField value="{!con.AssistantName}"/> 
+                <apex:InputField value="{!con.LeadSource}"/> 
+                <apex:InputField value="{!con.AssistantPhone}"/> 
+                <apex:InputField value="{!con.Gender__c}"/> 
+                <apex:InputField value="{!con.Receive_Email_or_not__c}"/> 
+                <apex:InputField value="{!con.TimeZone__c}"/> 
+                <apex:InputField value="{!con.Twitter_ID__c}"/> 
+                <apex:InputField value="{!con.primary_contact__c}"/> 
+            </apex:pageBlockSection>  
+           
+             <apex:pageBlockButtons Dir="LTR" location="bottom"  >
+                <apex:commandButton action="{!Screen1Next}"   value="Next" />
+               </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

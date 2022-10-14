@@ -1,0 +1,26 @@
+<aura:component  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Number" type="Integer"/>
+    <aura:attribute name="table" type="List"/>
+   
+    <div>
+         <lightning:input type="number" label="First Number" value="{!v.Number}" placeholder="Enter Table Number"/>
+          <lightning:button variant="brand-outline" label="Get Records"  title="Get Records" onclick="{!c.getAcc}" />
+    </div>
+    <div>
+    <table>
+        <thead>
+        <tr>
+            <th>table</th>
+            </tr>
+        </thead>
+        <tbody>
+          <aura:iteration items="{!v.table}" var="item" >
+            <tr>
+           
+                 <td>{!item}</td>
+            </tr>         
+            </aura:iteration>
+        </tbody>
+        </table>
+    </div>
+</aura:component>

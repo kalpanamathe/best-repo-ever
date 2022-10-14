@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="firstNumber" type="Integer"/>
+    <aura:attribute name="secondNumber" type="Integer"/>
+    <aura:attribute name="result" type="Integer"/> 
+     <div >
+     
+        <lightning:input type="number" label="First Number" value="{!v.firstNumber}" placeholder="Enter Number Only"/>
+        <lightning:input type="number" label="Second Number" value="{!v.secondNumber}" placeholder="Enter Number Only"/>
+        <lightning:button variant="brand-outline" label=""  iconName="utility:add" title="add" onclick="{!c.add }" />
+        <lightning:button variant="brand-outline" label="" title="sub" iconName="utility:dash" onclick="{!c.sub }" />
+        <lightning:button variant="brand-outline" label="" iconName="utility:close" title="mul" onclick="{!c.mul }" />
+        <lightning:button variant="brand-outline" label="" iconName="utility:percent" title="div" onclick="{!c.div }" />
+        
+    </div>
+    <div> Result : {!v.result} </div>
+</aura:component>

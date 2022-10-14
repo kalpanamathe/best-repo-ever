@@ -1,0 +1,44 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+ <aura:attribute name="result1" type="Integer"  /> 
+    <aura:attribute name="result" type="Integer"  /> 
+    <div  style="background: orange;
+                 border-radius: 100%;
+                 width: 450px;
+                 height: 450px;" >
+        <div  style="display:mintcream; float:center; width:100%; padding-top:20%; padding-bottom:90%;padding-left:20%;
+                     text-align:left;color:black;font-family:Verdana;
+                     font-weight:bold;" >
+            <div style="width:250px; text-align:left;padding-left:20%;
+                        height:40px; 
+                        border:1px solid black;
+                        background:mintcream; color:black;font-size: x-large; "> 
+               </div>
+            <lightning:input type="number" label="result" value="{!v.result}"  />
+              <lightning:input type="number" label="result" value="{!v.result}" disabled="true"  />
+       
+       <br></br>
+        <lightning:button variant="brand-outline" label="1"   title="one" onclick="{!c.one }" />
+        <lightning:button variant="brand-outline" label="2" title="two"  onclick="{!c.two }" />
+        <lightning:button variant="brand-outline" label="3"  title="three" onclick="{!c.three }" />
+        <lightning:button variant="brand-outline" label="4"  title="four" onclick="{!c.four }" />
+        <lightning:button variant="brand-outline" label="5"  title="five" onclick="{!c.five }" />
+            <br></br>  <br></br>
+        <lightning:button variant="brand-outline" label="6" title="six" onclick="{!c.six }" />
+        <lightning:button variant="brand-outline" label="7"  title="seven" onclick="{!c.seven }" />
+        <lightning:button variant="brand-outline" label="8"  title="eight" onclick="{!c.eight }" />
+        <lightning:button variant="brand-outline" label="9"   title="nine" onclick="{!c.nine }" />
+        <lightning:button variant="brand-outline" label="0" title="zero"  onclick="{!c.zero }" />
+          <br></br>  <br></br>
+            
+          <lightning:button variant="brand-outline" label=""  iconName="utility:add" title="add" onclick="{!c.add }" />
+        <lightning:button variant="brand-outline" label="" title="sub" iconName="utility:dash" onclick="{!c.sub }" />
+        <lightning:button variant="brand-outline" label="" iconName="utility:close" title="mul" onclick="{!c.mul }" />
+        <lightning:button variant="brand-outline" label="" iconName="utility:percent" title="div" onclick="{!c.div }" />
+        
+         </div>
+    </div>
+    <div  default="false" >
+      <lightning:input type="number" label="First Number" value="{!v.firstNumber}" />
+        <lightning:input type="number" label="Second Number" value="{!v.secondNumber}" />
+        </div>
+</aura:component>

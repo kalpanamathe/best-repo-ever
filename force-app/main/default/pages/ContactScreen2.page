@@ -1,0 +1,28 @@
+<apex:page controller="ContactPagenation" >
+     <apex:form >
+        <apex:sectionHeader title="!$label.contactEdit" subtitle="New Contact Edit" />
+    <apex:pageBlock title="Contact Edit" helpTitle="Help" helpurl="https://www.google.com" tabStyle="Contact"> 
+             <apex:pageBlockSection title="Address Information" columns="2" >
+                <apex:inputField value="{!con.MailingStreet}"    /> 
+                <apex:InputField value="{!con.OtherStreet}"/> 
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection >
+                <apex:InputField value="{!con.MailingCity}"/> 
+                <apex:InputField value="{!con.OtherCity}"/> 
+                <apex:InputField value="{!con.MailingState}"/> 
+                <apex:InputField value="{!con.OtherState}"/> 
+                <apex:InputField value="{!con.MailingPostalCode}"/>
+                <apex:InputField value="{!con.OtherPostalCode}"/>
+                <apex:InputField value="{!con.MailingCountry}"/> 
+                <apex:InputField value="{!con.OtherCountry}"/> 
+            </apex:pageBlockSection> 
+
+           
+             <apex:pageBlockButtons Dir="LTR" location="bottom"  >
+                  <apex:commandButton action="{!Screen2Previous}"   value="Previous" />
+                <apex:commandButton action="{!Screen2Next}"   value="Next" />
+               </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

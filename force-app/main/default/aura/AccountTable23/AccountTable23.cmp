@@ -1,0 +1,29 @@
+<aura:component controller="AccountTable23" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="accList" type="List"/>
+    <div>
+        <lightning:button variant="brand-outline" label="Get Accounts" title="Get Account Records" onclick="{!c.getAcc }" />
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Industry</th>
+                    <th>Type</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.accList}" var="item" >
+                    <tr>
+                        <td>{!item.Name}</td>
+                        <td>{!item.Industry}</td>
+                        <td>{!item.Type}</td>
+                        <td>{!item.Phone}</td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </div>
+    
+</aura:component>

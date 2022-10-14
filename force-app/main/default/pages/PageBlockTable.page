@@ -1,0 +1,17 @@
+<apex:page controller="PageBlockTable" >
+    <apex:form >
+    <apex:pageBlock id="pbt">
+    <apex:pageBlockTable value="{!lstacc}" var="item"  >
+        
+        <apex:column value="{!item.id}"  />
+        <apex:column value="{!item.name}"  />
+        <apex:column value="{!item.Industry}"  />
+        
+        </apex:pageBlockTable>
+                        
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!Next}" value="next" disabled="{!PreviousDisable}" reRender="pbt" />
+            <apex:commandButton action="{!Previous}" value="Previous" disabled="{!nextDisable}" reRender="pbt" />
+        </apex:pageBlockButtons>
+        </apex:pageBlock></apex:form>
+</apex:page>

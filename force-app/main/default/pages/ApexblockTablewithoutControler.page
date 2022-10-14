@@ -1,0 +1,14 @@
+<apex:page standardController="Account" recordSetVar="accs" sidebar="false" >
+    <apex:form >
+    <apex:pageBlock title="Account data" >
+       <apex:pageBlockTable value="{!accs}" var="acc" rows="25" >
+       
+           
+         <apex:column value="{!acc.id}" />
+              <apex:column value="{!acc.Name}" />
+            <apex:column value="{!acc.Type}" />
+           
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

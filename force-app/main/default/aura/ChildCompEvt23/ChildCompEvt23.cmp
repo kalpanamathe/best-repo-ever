@@ -1,0 +1,7 @@
+<aura:component >
+	 <aura:attribute name="accchildName" type="string" default="kalpana" />
+    <aura:attribute name="accchildPhone" type="string" default="1234567890" />
+    <aura:attribute name="accchildRating" type="string" default="Cold" />
+    <aura:registerEvent name="CompEvt23" type="c.CompEvt23" />
+    <lightning:button label="click to fire the Event" variant="brand" onclick="{!c.childComponentEvent}"/>
+</aura:component>

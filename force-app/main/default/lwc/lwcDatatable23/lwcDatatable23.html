@@ -1,0 +1,36 @@
+<template>
+ <table>
+     <thead>
+         <tr>
+             <th>
+                 Account Name
+             </th>
+             <th>
+                Industry
+            </th>
+            <th>
+                Type
+            </th>
+         </tr>
+
+ </thead>
+ <tbody>
+<template for:each={accounts.data} for:item="acc">
+    <tr key={acc.Id} >
+        <td>{acc.Name}</td>
+        <td>{acc.Industry}</td>
+        <td>{acc.Type}</td>
+    </tr>
+</template></tbody>
+</table> 
+<div> LWC data Table</div>
+
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={accounts.data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>    
+
+</template>

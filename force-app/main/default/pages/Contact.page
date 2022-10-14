@@ -1,0 +1,60 @@
+<apex:page standardController="Contact">
+    <apex:form >
+        <apex:pageBlock title="Contact Edit" helpTitle="Help" helpurl="https://www.google.com" tabStyle="Contact"> 
+            <apex:pageBlockSection title="Contact Information" columns="2">
+                <apex:InputField value="{!Contact.Name}"/> 
+                <apex:InputField value="{!Contact.Phone}"/> 
+                <apex:InputField value="{!Contact.Salutation}"/> 
+                <apex:InputField value="{!Contact.FirstName}"/> 
+                <apex:InputField value="{!Contact.LastName}"/> 
+                <apex:InputField value="{!Contact.AccountId}"/> 
+                <apex:InputField value="{!Contact.MobilePhone}"/> 
+                <apex:InputField value="{!Contact.Title}"/> 
+                <apex:InputField value="{!Contact.OtherPhone}"/> 
+                <apex:InputField value="{!Contact.Department}"/> 
+                <apex:InputField value="{!Contact.Fax}"/> 
+                <apex:InputField value="{!Contact.Birthdate}"/> 
+                <apex:InputField value="{!Contact.Email}"/> 
+                <apex:InputField value="{!Contact.ReportsToId}"/> 
+                <apex:InputField value="{!Contact.AssistantName}"/> 
+                <apex:InputField value="{!Contact.LeadSource}"/> 
+                <apex:InputField value="{!Contact.AssistantPhone}"/> 
+                <apex:InputField value="{!Contact.Gender__c}"/> 
+                <apex:InputField value="{!Contact.Receive_Email_or_not__c}"/> 
+                <apex:InputField value="{!Contact.TimeZone__c}"/> 
+                <apex:InputField value="{!Contact.Twitter_ID__c}"/> 
+                <apex:InputField value="{!Contact.primary_contact__c}"/> 
+            </apex:pageBlockSection>  
+            
+            <apex:pageBlockSection title="Address Information" columns="2" >
+                <apex:inputField value="{!Contact.MailingStreet}"    /> 
+                <apex:InputField value="{!Contact.OtherStreet}"/> 
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection >
+                <apex:InputField value="{!Contact.MailingCity}"/> 
+                <apex:InputField value="{!Contact.OtherCity}"/> 
+                <apex:InputField value="{!Contact.MailingState}"/> 
+                <apex:InputField value="{!Contact.OtherState}"/> 
+                <apex:InputField value="{!Contact.MailingPostalCode}"/>
+                <apex:InputField value="{!Contact.OtherPostalCode}"/>
+                <apex:InputField value="{!Contact.MailingCountry}"/> 
+                <apex:InputField value="{!Contact.OtherCountry}"/> 
+            </apex:pageBlockSection> 
+             <apex:pageBlockSection title="Additional Information" columns="2" >
+                <apex:inputField value="{!Contact.Languages__c}"    /> 
+                <apex:InputField value="{!Contact.Level__c}"/> 
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection title="Description Information" columns="1" >
+                <apex:inputField value="{!Contact.Description}"    /> 
+                <apex:inputField value="{!Contact.Language__c  }"    /> 
+            </apex:pageBlockSection> 
+          
+            <apex:pageBlockButtons Dir="RTR"  >
+                <apex:commandButton action="{!Save}"   value="save" />
+                <apex:commandButton action="{!Cancel}" value="Cancel"  />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

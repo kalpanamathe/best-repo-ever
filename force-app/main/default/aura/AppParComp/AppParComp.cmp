@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="accParentName" type="string" />
+    <aura:attribute name="accParentPhone" type="string" />
+    <aura:attribute name="accParentRating" type="string" />
+    <aura:handler  event="c.AppCompEvt" action="{!c.handleAppComponentEvent}" />
+    <c:AppChildComp   />
+    <div>
+        <h1>Parent Data</h1>
+        Account Name : "{!v.accParentName}" <br/>
+        Account Phone : "{!v.accParentPhone}"  <br/>
+        Rating : "{!v.accParentRating}"  
+    </div>
+</aura:component>

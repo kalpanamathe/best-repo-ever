@@ -1,0 +1,5 @@
+<design:component>
+    <design:attribute name="objName"  datasource="Account,Contact,Opportunity,Case,Lead" />
+     <design:attribute name="lvName"  datasource="AllAccounts,AllContacts,AllOpportunities,AllClosedCases,AllOpenLeads" />
+     <design:attribute name="rows"  datasource="5,10,15,20" />
+</design:component>

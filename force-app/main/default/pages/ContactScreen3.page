@@ -1,0 +1,22 @@
+<apex:page controller="ContactPagenation" >
+     <apex:form >
+        <apex:sectionHeader title="!$label.contactEdit" subtitle="New Contact Edit" />
+   
+         <apex:pageBlock title="Contact Edit" helpTitle="Help" helpurl="https://www.google.com" tabStyle="Contact"> 
+              <apex:pageBlockSection title="Additional Information" columns="2" >
+                <apex:inputField value="{!con.Languages__c}"    /> 
+                <apex:InputField value="{!con.Level__c}"/> 
+            </apex:pageBlockSection> 
+             
+             <apex:pageBlockSection title="Description Information" columns="1" >
+                <apex:inputField value="{!con.Description}"    /> 
+                <apex:inputField value="{!con.Language__c  }"    /> 
+            </apex:pageBlockSection> 
+           
+             <apex:pageBlockButtons Dir="LTR" location="bottom"  >
+                  <apex:commandButton action="{!Screen3Previous}"   value="Previous" />
+                <apex:commandButton action="{!Screen3Next}"   value="Next" />
+               </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

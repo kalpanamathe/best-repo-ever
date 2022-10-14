@@ -1,0 +1,10 @@
+<template>
+    <div> 
+        <lightning-input type="number" onchange={firstNumberChange} value={tableNumber} placeholder="Enter number only" label='First Number'></lightning-input>
+        <lightning-button variant="brand-outline" label="" title="Tables" icon-name="utility:close"  onclick={multiplyValue}></lightning-button>
+    </div> 
+    </br>
+    <template for:each={table} for:item="currentItem">
+        <div key={currentItem.Id}>{currentItem}<br/></div>
+    </template>
+</template>

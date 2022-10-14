@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="accEvtName" type="string"   />
+    <aura:attribute name="accEvtPhone" type="string"  />
+    <aura:attribute name="accEvtRating" type="string"  />
+</aura:event>

@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!--Attrubutes Declaration-->
+    <aura:attribute name="accName" type="string" default="kalpana"/>
+    <aura:attribute name="accPhone" type="string" default="1234567890"/>
+    <aura:attribute name="accRating" type="string" default="Cold"/>
+    <!--Attrubutes Declaration Completed-->
+      <!--Handler Declaration-->
+      <!--Handler Declaration Completed-->
+    <!--Child Component Initiation-->
+    <c:ChildComp23 childAccName="{!v.accName}" childAccPhone="{!v.accPhone}" childAccRating="{!v.accRating}" />
+</aura:component>
